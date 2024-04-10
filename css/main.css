@@ -154,12 +154,30 @@ body {
   margin-top: auto;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1220px) {
+  .main {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 788px) {
+  .main {
+    row-gap: 40px;
+    margin-bottom: 40px;
+  }
+}
+
 .header {
   padding: 40px 0;
 }
-@media (max-width: 788px) {
+@media (max-width: 1220px) {
   .header {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 }
 
@@ -174,6 +192,29 @@ body {
 
 .header__logo {
   flex-shrink: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  color: #000;
+}
+
+.info {
+  display: flex;
+  column-gap: 30px;
+}
+@media (max-width: 788px) {
+  .info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.info__about,
+.info__skills {
+  flex: 1;
 }
 
 .footer {
@@ -225,6 +266,105 @@ a.logo:link {
   display: flex;
   column-gap: 20px;
   align-items: center;
+}
+
+.info-block {
+  background-color: #fbfbfb;
+  padding: 30px 30px 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+}
+@media (max-width: 1220px) {
+  .info-block {
+    padding: 20px;
+  }
+}
+.info-block--accent {
+  background-color: #f1f8fb;
+}
+.info-block p + p {
+  margin-top: 15px;
+}
+@media (max-width: 788px) {
+  .info-block p + p {
+    margin-top: 10px;
+  }
+}
+
+.info-block__title {
+  margin-bottom: 20px;
+}
+@media (max-width: 788px) {
+  .info-block__title {
+    margin-bottom: 10px;
+  }
+}
+
+.info-block__badges {
+  margin-bottom: 20px;
+}
+
+.info-block__list ul {
+  line-height: 1.3;
+}
+.info-block__list ul li {
+  position: relative;
+  padding-left: 15px;
+}
+.info-block__list ul li::before {
+  position: absolute;
+  content: "-";
+  left: 0;
+  top: 0;
+}
+.info-block__list ul li + li {
+  margin-top: 10px;
+}
+
+.badges__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.badges__item {
+  padding: 0 6px;
+  height: 19px;
+  line-height: 19px;
+  border-radius: 2px;
+  background-color: #414141;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+.badges__item--html {
+  background-color: #414141;
+}
+.badges__item--css {
+  background-color: #39a0ff;
+}
+.badges__item--scss {
+  background-color: #dd6adf;
+}
+.badges__item--gulp {
+  background-color: #ec473c;
+}
+.badges__item--js {
+  background-color: #ffce20;
+  color: #000;
+}
+.badges__item--react {
+  background-color: #33d6f0;
+}
+.badges__item--node {
+  background-color: #67cf00;
+}
+.badges__item--php {
+  background-color: #b07fed;
+}
+.badges__item--wp {
+  background-color: #0f8cc6;
 }
 
 .top-link {
