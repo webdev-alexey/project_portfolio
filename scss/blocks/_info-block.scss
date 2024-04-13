@@ -28,10 +28,6 @@
 
 .info-block__title {
   margin-bottom: 20px;
-
-  @include mobile {
-    margin-bottom: 10px;
-  }
 }
 
 .info-block__badges {

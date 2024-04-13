@@ -14,7 +14,7 @@ a,
 a:link,
 a:visited {
   color: #0f7dff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus,
@@ -23,6 +23,6 @@ button:focus {
   outline: #005fcc auto 1px;
 }
 
-p + p {
-  margin-top: 1em;
-}
+// p + p {
+//   margin-top: 1em;
+// }
