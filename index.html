@@ -7,6 +7,7 @@
       content="width=360, initial-scale=1, shrink-to-fit=no"
     />
     <title>Портфолио Алексей HTML верстальщик</title>
+    <link rel="stylesheet" href="js/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <link rel="icon" type="image/x-icon" href="img/favicons/favicon.svg" />
@@ -88,8 +89,8 @@
                 <li class="badges__item badges__item--scss">SCSS</li>
                 <li class="badges__item badges__item--gulp">Gulp</li>
                 <li class="badges__item badges__item--js">JS</li>
-                <li class="badges__item badges__item--react">React JS</li>
-                <li class="badges__item badges__item--node">Node JS</li>
+                <!-- <li class="badges__item badges__item--react">React JS</li> -->
+                <!-- <li class="badges__item badges__item--node">Node JS</li> -->
                 <li class="badges__item badges__item--php">PHP</li>
                 <li class="badges__item badges__item--wp">WordPress</li>
               </ul>
@@ -118,12 +119,16 @@
                   alt="ЭпикТрэвел"
                 />
               </div>
-              <h3 class="project__title"><a href="#">ЭпикТрэвел</a></h3>
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalEpic">
+                  ЭпикТрэвел
+                </a>
+              </h3>
               <p class="project__desc">
                 Верстка сайта визитки. 4 страницы, форма обратной связи,
                 мобильная адаптация, retina ready
               </p>
-              <p class="project__tags">HTML, CSS, PHP</p>
+              <p class="project__tags tags">HTML, CSS, PHP</p>
             </li>
 
             <li class="project__item">
@@ -134,12 +139,16 @@
                   alt="Сайт коворкинга"
                 />
               </div>
-              <h3 class="project__title"><a href="#">Сайт коворкинга</a></h3>
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalCoworks">
+                  Сайт коворкинга
+                </a>
+              </h3>
               <p class="project__desc">Верстка лендинга для сайта коворкинга</p>
-              <p class="project__tags">HTML, SCSS, JS</p>
+              <p class="project__tags tags">HTML, SCSS, JS</p>
             </li>
 
-            <li class="project__item">
+            <!-- <li class="project__item">
               <div class="project__img">
                 <img
                   src="img/projects/beauty.jpg"
@@ -149,7 +158,7 @@
               </div>
               <h3 class="project__title"><a href="#">Салон красоты</a></h3>
               <p class="project__desc">Создание сайта салона красоты</p>
-              <p class="project__tags">HTML, SCSS, JS, Gulp</p>
+              <p class="project__tags tags">HTML, SCSS, JS, Gulp</p>
             </li>
 
             <li class="project__item">
@@ -164,7 +173,7 @@
               <p class="project__desc">
                 Онлайн опросник в формате квиза. Верстка и JS
               </p>
-              <p class="project__tags">HTML, CSS, JS</p>
+              <p class="project__tags tags">HTML, CSS, JS</p>
             </li>
 
             <li class="project__item">
@@ -177,7 +186,7 @@
               </div>
               <h3 class="project__title"><a href="#">CRM система</a></h3>
               <p class="project__desc">Frontend для CRM системы</p>
-              <p class="project__tags">JS</p>
+              <p class="project__tags tags">JS</p>
             </li>
 
             <li class="project__item">
@@ -190,8 +199,8 @@
               </div>
               <h3 class="project__title"><a href="#">Каталог квартир</a></h3>
               <p class="project__desc">Frontend для каталога недвижимости</p>
-              <p class="project__tags">JS, webpack</p>
-            </li>
+              <p class="project__tags tags">JS, webpack</p>
+            </li> -->
           </ul>
         </div>
 
@@ -226,13 +235,164 @@
       </div>
     </footer>
 
+    <section class="modal" id="modalEpic">
+      <div class="modal__img">
+        <img
+          src="img/projects/epic-lg.jpg"
+          srcset="./img/projects/epic-lg@2x.jpg"
+          alt="ЭпикТрэвел"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">ЭпикТрэвел</h2>
+
+        <div class="modal__text">
+          <p>
+            Верстка сайта визитки. 4 страницы, форма обратной связи, мобильная
+            адаптация, retina ready.
+          </p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_epic-travel/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_epic-travel/tours.html"
+                target="_blank"
+              >
+                Туры и направления
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_epic-travel/about.html"
+                target="_blank"
+              >
+                О компании
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_epic-travel/contacts.html"
+                target="_blank"
+              >
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, CSS, PHP</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/project_epic-travel/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_epic-travel"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="modalCoworks">
+      <div class="modal__img">
+        <img
+          src="img/projects/coworks-lg.jpg"
+          srcset="./img/projects/coworks-lg@2x.jpg"
+          alt="Коворкинг"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">Сайт коворкинга</h2>
+
+        <div class="modal__text">
+          <p>
+            Верстка сайта лендинга. SCSS и БЭМ-нейминг. Мобильная адаптация под
+            планшеты и смартфоны. Retina-ready. JS-скрипты и плагины
+          </p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_coworks/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, SCSS, JS, PHP</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/project_coworks/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_coworks"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
     <a href="#top" class="top-link" id="scrollToTopBtn">
       <img src="img/icons/arrow-up.svg" alt="Arrow up" />
     </a>
 
-    <!-- Скрипты -->
+    <script src="js/fancybox/fancybox.umd.js"></script>
     <script src="js/scrollToTop.js"></script>
-
     <script src="js/main.js"></script>
   </body>
 </html>
