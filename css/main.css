@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 @import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,700);
@@ -102,6 +103,7 @@ a:link,
 a:visited {
   color: #0f7dff;
   text-decoration: none;
+  display: block;
 }
 
 a:focus,
@@ -331,6 +333,15 @@ a.logo:link {
   align-items: center;
 }
 
+.socials__link {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials__link:hover {
+  opacity: 0.5;
+}
+
 .info-block {
   background-color: #fbfbfb;
   padding: 30px 30px 50px;
@@ -373,7 +384,7 @@ a.logo:link {
 }
 .info-block__list ul li::before {
   position: absolute;
-  content: "-";
+  content: "—";
   left: 0;
   top: 0;
 }
@@ -415,7 +426,7 @@ a.logo:link {
 .badges__item--react {
   background-color: #33d6f0;
 }
-.badges__item--node {
+.badges__item--gsap {
   background-color: #67cf00;
 }
 .badges__item--php {
@@ -442,13 +453,19 @@ a.logo:link {
 
 .project__item {
   position: relative;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__item:hover {
+  opacity: 0.7;
 }
 
 .project__img {
   margin-bottom: 15px;
   height: 210px;
   background-color: #f6f6f6;
-  background-image: url("../../img/projects/laptop.svg");
+  background-image: url("../img/projects/laptop.svg");
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -562,7 +579,7 @@ a.btn-link--wide {
   position: fixed;
   right: 40px;
   bottom: 40px;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -605,7 +622,7 @@ a.btn-link--wide {
 .modal__img {
   height: 370px;
   background-color: #f6f6f6;
-  background-image: url("../../img/projects/laptop-big.svg");
+  background-image: url("../img/projects/laptop-big.svg");
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;

@@ -3,3 +3,12 @@
   column-gap: 20px;
   align-items: center;
 }
+
+.socials__link {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials__link:hover {
+  opacity: 0.5;
+}

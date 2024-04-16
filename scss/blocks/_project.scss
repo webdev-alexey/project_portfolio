@@ -6,13 +6,19 @@
 
 .project__item {
   position: relative;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__item:hover {
+  opacity: 0.7;
 }
 
 .project__img {
   margin-bottom: 15px;
   height: 210px;
   background-color: #f6f6f6;
-  background-image: url("../../img/projects/laptop.svg");
+  background-image: url("../img/projects/laptop.svg");
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;

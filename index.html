@@ -29,7 +29,11 @@
 
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link" href="mailto:webdev.alexey94@yandex.by">
+              <a
+                class="socials__link"
+                href="mailto:webdev.alexey94@yandex.by"
+                target="_blank"
+              >
                 <img
                   class="socials__img"
                   src="img/socials/email.svg"
@@ -38,7 +42,11 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://github.com/webdev-alexey">
+              <a
+                class="socials__link"
+                href="https://github.com/webdev-alexey"
+                target="_blank"
+              >
                 <img
                   class="socials__img"
                   src="img/socials/github.svg"
@@ -47,7 +55,11 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://t.me/webdev_alexey">
+              <a
+                class="socials__link"
+                href="https://t.me/webdev_alexey"
+                target="_blank"
+              >
                 <img
                   class="socials__img"
                   src="img/socials/telegram.svg"
@@ -89,8 +101,7 @@
                 <li class="badges__item badges__item--scss">SCSS</li>
                 <li class="badges__item badges__item--gulp">Gulp</li>
                 <li class="badges__item badges__item--js">JS</li>
-                <!-- <li class="badges__item badges__item--react">React JS</li> -->
-                <!-- <li class="badges__item badges__item--node">Node JS</li> -->
+                <li class="badges__item badges__item--gsap">GSAP</li>
                 <li class="badges__item badges__item--php">PHP</li>
                 <li class="badges__item badges__item--wp">WordPress</li>
               </ul>
@@ -148,30 +159,40 @@
               <p class="project__tags tags">HTML, SCSS, JS</p>
             </li>
 
-            <!-- <li class="project__item">
+            <li class="project__item">
               <div class="project__img">
                 <img
-                  src="img/projects/beauty.jpg"
-                  srcset="./img/projects/beauty@2x.jpg"
-                  alt="Салон красоты"
+                  src="img/projects/burger.jpg"
+                  srcset="./img/projects/burger@2x.jpg"
+                  alt="Burger"
                 />
               </div>
-              <h3 class="project__title"><a href="#">Салон красоты</a></h3>
-              <p class="project__desc">Создание сайта салона красоты</p>
-              <p class="project__tags tags">HTML, SCSS, JS, Gulp</p>
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalBurger">
+                  Бургерная
+                </a>
+              </h3>
+              <p class="project__desc">Создание мини-магазина Бургерной</p>
+              <p class="project__tags tags">
+                HTML, CSS, JS, Angular, TypeScript
+              </p>
             </li>
 
             <li class="project__item">
               <div class="project__img">
                 <img
-                  src="img/projects/quiz.jpg"
-                  srcset="./img/projects/quiz@2x.jpg"
-                  alt="Квиз"
+                  src="img/projects/freshbar.jpg"
+                  srcset="./img/projects/freshbar@2x.jpg"
+                  alt="FreshBar"
                 />
               </div>
-              <h3 class="project__title"><a href="#">Квиз</a></h3>
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalFreshBar">
+                  FreshBar
+                </a>
+              </h3>
               <p class="project__desc">
-                Онлайн опросник в формате квиза. Верстка и JS
+                Создание магазина с освежающими напитками
               </p>
               <p class="project__tags tags">HTML, CSS, JS</p>
             </li>
@@ -179,28 +200,38 @@
             <li class="project__item">
               <div class="project__img">
                 <img
-                  src="img/projects/crm.jpg"
-                  srcset="./img/projects/crm@2x.jpg"
+                  src="img/projects/workspace.jpg"
+                  srcset="./img/projects/workspace@2x.jpg"
                   alt="CRM система"
                 />
               </div>
-              <h3 class="project__title"><a href="#">CRM система</a></h3>
-              <p class="project__desc">Frontend для CRM системы</p>
-              <p class="project__tags tags">JS</p>
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalWorkspace">
+                  Доска объявлений Workspace
+                </a>
+              </h3>
+              <p class="project__desc">Сайт объявлений и фильтрации вакансий</p>
+              <p class="project__tags tags">HTML, CSS, JS, API</p>
             </li>
 
             <li class="project__item">
               <div class="project__img">
                 <img
-                  src="img/projects/spa.jpg"
-                  srcset="./img/projects/spa@2x.jpg"
-                  alt="Каталог квартир"
+                  src="img/projects/point.jpg"
+                  srcset="./img/projects/point@2x.jpg"
+                  alt="Point"
                 />
               </div>
-              <h3 class="project__title"><a href="#">Каталог квартир</a></h3>
-              <p class="project__desc">Frontend для каталога недвижимости</p>
-              <p class="project__tags tags">JS, webpack</p>
-            </li> -->
+              <h3 class="project__title">
+                <a href="#" data-fancybox="gallery" data-src="#modalPoint">
+                  Point
+                </a>
+              </h3>
+              <p class="project__desc">
+                Создание анимированного лендинга Point
+              </p>
+              <p class="project__tags tags">HTML, CSS, JS, GSAP</p>
+            </li>
           </ul>
         </div>
 
@@ -375,6 +406,250 @@
           <a
             class="modal__link btn-link"
             href="https://github.com/webdev-alexey/project_coworks"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="modalBurger">
+      <div class="modal__img">
+        <img
+          src="img/projects/burger-lg.jpg"
+          srcset="./img/projects/burger-lg@2x.jpg"
+          alt="Коворкинг"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">Бургерная</h2>
+
+        <div class="modal__text">
+          <p>Создание мини-магазина Бургерной</p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/burgers/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, CSS, JS, Angular, TypeScript</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/burgers/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_burgerhouse"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="modalFreshBar">
+      <div class="modal__img">
+        <img
+          src="img/projects/freshbar-lg.jpg"
+          srcset="./img/projects/freshbar-lg@2x.jpg"
+          alt="Коворкинг"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">FreshBar</h2>
+
+        <div class="modal__text">
+          <p>Создание магазина с освежающими напитками</p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_freshyBar/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, CSS, JS, API</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/project_freshyBar/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_freshyBar"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="modalWorkspace">
+      <div class="modal__img">
+        <img
+          src="img/projects/workspace-lg.jpg"
+          srcset="./img/projects/workspace-lg@2x.jpg"
+          alt="Коворкинг"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">Доска объявлений Workspace</h2>
+
+        <div class="modal__text">
+          <p>Сайт объявлений и фильтрации вакансий</p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_workspace-adminka/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, CSS, JS, API</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/project_workspace-adminka/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_workspace-adminka"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/github.svg"
+              alt="GitHub проекта"
+            />
+            GitHub проекта
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="modalPoint">
+      <div class="modal__img">
+        <img
+          src="img/projects/point-lg.jpg"
+          srcset="./img/projects/point-lg@2x.jpg"
+          alt="Коворкинг"
+        />
+      </div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">Point</h2>
+
+        <div class="modal__text">
+          <p>Создание анимированного лендинга Point</p>
+          <p>Страницы:</p>
+
+          <ul>
+            <li>
+              <a
+                href="https://webdev-alexey.github.io/project_point/"
+                target="_blank"
+              >
+                Главная
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="modal__tags tags">HTML, CSS, JS, GSAP</p>
+
+        <div class="modal__links">
+          <a
+            class="modal__link btn-link"
+            href="https://webdev-alexey.github.io/project_point/"
+            target="_blank"
+          >
+            <img
+              src="img/projects/icons-project/link.svg"
+              alt="Смотреть демо"
+            />
+            Смотреть демо
+          </a>
+          <!-- <a class="modal__link btn-link" href="#" target="_blank">
+            <img src="img/projects/icons-project/site.svg" alt="Сайт клиента" />
+            Сайт клиента
+          </a> -->
+          <a
+            class="modal__link btn-link"
+            href="https://github.com/webdev-alexey/project_point"
             target="_blank"
           >
             <img
